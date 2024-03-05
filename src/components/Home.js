@@ -3,14 +3,15 @@ import { useSelector } from "react-redux";
 import { useSearchParams } from "react-router-dom";
 import useProducts from "../custome-hooks/useProducts";
 import Product from "./Product";
+import ShimmerUI from "./Shimmer";
 
 const Home = () => {
   useProducts();
   const allProducts = useSelector((store) => store?.product?.allProducts);
-  if (!allProducts) return;
+  if (!allProducts) return <ShimmerUI/>;
   return (
     <div>
-       <h1 className="text-[30px] font-bold text-center mt-7">
+       <h1 className="text-[30px] font-bold text-center mt-7 text-orange-700">
         Welcome to Redux Toolkit Store
       </h1>
 

@@ -9,7 +9,7 @@ const AppLayout = () => {
     <Provider store={store}>
       <Header></Header>
       <Outlet />
-      </Provider>
+    </Provider>
   );
 };
 

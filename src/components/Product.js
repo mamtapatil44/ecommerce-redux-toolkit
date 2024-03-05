@@ -13,14 +13,14 @@ const Product = ({ product }) => {
       <img src={image} alt="" className="h-32 d-block mx-auto" />
 
       <p className="text-[14px] leading-1  my-8 h-14 font-bold text-center">{title}</p>
-      <p className="text-[13px] font-bold  text-center">RS {price} /-</p>
+      <p className="text-[13px] font-bold  text-center">$ {price} /-</p>
       <div className="mt-4 text-center">
         <button
           type="button"
           onClick={() => {
             handleAddBtn(product);
           }}
-          className="btn bg-blue-500 text-[15px] px-4 text-white font-bold py-2 rounded-lg"
+          className="btn bg-orange-700 text-[15px] px-4 text-white font-bold py-2 rounded-lg"
         >
           Add to Cart
         </button>

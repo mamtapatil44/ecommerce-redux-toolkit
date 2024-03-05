@@ -4,7 +4,8 @@ import CartList from "./CartList";
 
 const Cart = () => {
   const cartItems = useSelector((store) => store?.cart?.cartProducts);
-  if(cartItems.lenth === 0) return <h1>Please add the item in the cart......</h1>
+  
+  if(cartItems.length === 0) return <h1 className="text-center font-bold mt-6 text-orange-700">Oops your cart is empty...Please add the item in the cart......</h1>
   return (
     <div >
         <h1 className="text-3xl text-center mt-5">cart</h1>
